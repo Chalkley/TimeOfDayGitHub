@@ -27,20 +27,22 @@ class ViewController: UIViewController {
         guard let currentSecond = componets.second else { return }
         
         if currentHour < 5 || currentHour > 18 {
-            greeting = "Good evening, have you reached your goals today?"
-            print ("Good evening")
+            greeting = "Good evening!"
+            print ("Good evening!")
             print("\(currentHour):\(currentMinute):\(currentSecond)")
         } else if currentHour < 18 || currentHour > 12 {
-            greeting = "Good afternoon, hope your crushin those goals"
-            print ("Good morning")
+            greeting = "Good afternoon"
+            print ("Good afternoon")
         } else {
-            greeting = "Good morning, time to hustle!"
+            greeting = "Good morning!"
+            print("Good morning")
         }
         //Label
         greetingLabel.text = greeting
         greetingLabel.font = UIFont(name: "AvenirNext-Medium", size: 20)
         greetingLabel.numberOfLines = 2
-        greetingLabel.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        greetingLabel.adjustsFontSizeToFitWidth = true 
+        greetingLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         //Main View
         view.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
         
