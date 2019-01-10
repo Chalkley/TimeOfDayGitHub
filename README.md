@@ -1,4 +1,4 @@
 # TimeOfDayGitHub
 
 
-Tutorial showing how to determine time of day an display via label. 
+Brief X-code project showing how to determine time of day and display via label. 
